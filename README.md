@@ -1,10 +1,16 @@
-1. testClass contains two automated tests in the spec folder.
+1. testClass
 
-1)dog_spec.rb automates the process of testing the functionality of the Dog class.
+The testClass folder contains two automated tests in the spec folder:
 
-2)websiteTest.rb automates several clicks on the Microsoft website with Selenium.
+dog_spec.rb
+Automates testing of the functionality of the Dog class.
+websiteTest.rb
+Uses Selenium to automate several clicks on the Microsoft website.
+2. testApi
 
-2. testApi folder contains api tests in the spec folder.
+The testApi folder contains API tests in the spec folder:
 
-1)status_spec.rb contains a web api test.
-2)consoles_spec.rb contains api json test.
+status_spec.rb
+Contains a web API test.
+consoles_spec.rb
+Contains an API JSON test.

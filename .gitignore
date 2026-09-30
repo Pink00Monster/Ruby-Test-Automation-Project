@@ -1,0 +1,38 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Ignored default folder with query files
+/queries/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+.idea/
+.ruby-lsp/
+
+/log/*
+/tmp/*
+/storage/*
+/testApi/.bundle/
+/testApi/.env*
+/testApi/log/*
+/testApi/tmp/*
+
+!/testApi/log/.keep
+!/testApi/tmp/.keep
+/testApi/tmp/pids/*
+
+!/testApi/tmp/pids/
+!/testApi/tmp/pids/.keep
+
+/testApi/storage/*
+!/testApi/storage/.keep
+
+/testApi/tmp/storage/*
+!/testApi/tmp/storage/
+!/testApi/tmp/storage/.keep
+
+/testApi/public/assets/
+
+/testApi/config/*.key

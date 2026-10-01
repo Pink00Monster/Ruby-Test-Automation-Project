@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Status requests', type: :request do
+RSpec.describe 'Status requests' do
   describe 'GET /status' do
     it 'returns a status message' do
       get('/status')

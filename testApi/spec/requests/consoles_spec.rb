@@ -1,6 +1,16 @@
 require 'rails_helper'
 
-RSpec.describe 'Consoles requests', type: :request do
+RSpec.describe 'Consoles requests' do
+  before do
+    Console.create(name: 'NES', manufacturer: 'Nintendo')
+    Console.create(name: 'SNES', manufacturer: 'Nintendo')
+    Console.create(name: 'Wii', manufacturer: 'Nintendo')
+    Console.create(name: 'Genesis', manufacturer: 'Sega')
+    Console.create(name: 'Xbox', manufacturer: 'Microsoft')
+    Console.create(name: 'Switch', manufacturer: 'Nintendo')
+    Console.create(name: 'PS1', manufacturer: 'Sony')
+    Console.create(name: 'PS2', manufacturer: 'Sony')
+  end
   describe 'GET /consoles' do
     it 'returns an array of video games consoles' do
       get('/consoles')

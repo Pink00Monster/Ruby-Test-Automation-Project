@@ -11,9 +11,9 @@ RSpec.describe 'Consoles requests' do
     Console.create(name: 'PS1', manufacturer: 'Sony')
     Console.create(name: 'PS2', manufacturer: 'Sony')
   end
-  describe 'GET /consoles' do
+  describe 'GET /api/consoles' do
     it 'returns an array of video games consoles' do
-      get('/consoles')
+      get('/api/consoles')
       
       expect(response_json['consoles']).to contain_exactly(
                                     'NES',
@@ -28,7 +28,7 @@ RSpec.describe 'Consoles requests' do
     end
 
     it 'supports specifying consoles for a specific manufacturer' do
-      get('/consoles', params: { manufacturer: 'Nintendo' })
+      get('/api/consoles', params: { manufacturer: 'Nintendo' })
 
       expect(response_json['consoles']).to contain_exactly(
                                     'NES',
@@ -37,12 +37,12 @@ RSpec.describe 'Consoles requests' do
                                     'Switch'
                                   )
 
-      get('/consoles', params: { manufacturer: 'Sega' })     
+      get('/api/consoles', params: { manufacturer: 'Sega' })     
       expect(response_json['consoles']).to contain_exactly(
                                     'Genesis'
                                   )
 
-      get('/consoles', params: { manufacturer: 'Sony' })
+      get('/api/consoles', params: { manufacturer: 'Sony' })
       expect(response_json['consoles']).to contain_exactly(
                                     'PS1',
                                     'PS2'

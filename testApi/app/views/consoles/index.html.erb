@@ -1,0 +1,9 @@
+<h1>Consoles</h1>
+
+<%= link_to('Add a New Console', new_console_path) %>
+
+<ul>
+<% @consoles.each do |console| %>
+  <li><%= console.name %> by <%= console.manufacturer %></li>
+<% end %>   
+</ul>

@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   root 'home#index'
   get('about' => 'about#index')
+  resources(:consoles)
+
 
   namespace :api do
     get('status' => 'status#index')

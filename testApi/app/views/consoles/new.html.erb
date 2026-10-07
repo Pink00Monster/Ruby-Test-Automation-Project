@@ -1,0 +1,16 @@
+<h1>Add a New Console</h1>
+
+<%= form_for Console.new do |f| %>
+ <label>
+        Name
+        <%= f.text_field :name %>
+    </label>
+
+    <label>
+        Manufacturer
+        <%= f.text_field :manufacturer %>
+    </label>
+
+    <%= f.submit 'Create Console' %>
+
+<% end %>
